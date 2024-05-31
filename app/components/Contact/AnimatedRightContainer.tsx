@@ -6,7 +6,7 @@ import Button from "../button/Button";
 const AnimatedRightContainer = () => {
   return (
     <motion.article
-      initial={{ x: 200, opacity: 0 }}
+      initial={{ x: 100, opacity: 0 }}
       transition={{ duration: 1.2 }}
       whileInView={{ x: 0, opacity: 1 }}
       viewport={{ once: true }}

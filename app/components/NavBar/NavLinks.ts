@@ -14,11 +14,11 @@ export const navlinks: navLink[] = [
     },
     {
         id: 3,
-        name: "Skills"
+        name: "ToolsAndTech"
     },
     {
         id: 4,
-        name: "Services"
+        name: "Team"
     },
     {
         id: 5,
