@@ -2,11 +2,13 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import App2 from "../../../public/17_Dark_sign up, step 12.png";
+import App4 from "../../../public/appsplashscreen.jpg";
 import Mission from "../../../public/bullseye-solid.svg";
 import Vision from "../../../public/eye-solid.svg";
 import Goal from "../../../public/medal-solid.svg";
 import App3 from "../../../public/Plant Care App (Dribbble shot) (1).jpg";
 import App1 from "../../../public/Plant Care App (Dribbble shot).jpg";
+import App5 from "../../../public/ripenessprediction_output_screen.jpg";
 import Card from "./Card";
 import Methodology from "./Methodology";
 const Header = () => {
@@ -35,7 +37,17 @@ const Header = () => {
           more sustainable future for everyone.
         </p>
       </div>
-      <div className="grid grid-cols-1 p-5 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 p-5 gap-5 sm:grid-cols-2 lg:grid-cols-5">
+        <motion.div
+          initial={{ x: -200, opacity: 0 }}
+          transition={{ duration: 1.2 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          className="flex bg-[#292929] items-center justify-center shadow-lg p-5 rounded-lg w-[200px]"
+        >
+          <Image src={App4.src} alt="app1" width={100} height={100} />
+        </motion.div>
+
         <motion.div
           initial={{ x: -200, opacity: 0 }}
           transition={{ duration: 1.2 }}
@@ -62,6 +74,15 @@ const Header = () => {
           className="flex items-center justify-center shadow-lg p-5 bg-[#292929] rounded-lg w-[200px]"
         >
           <Image src={App1.src} alt="app1" width={100} height={100} />
+        </motion.div>
+        <motion.div
+          initial={{ x: -200, opacity: 0 }}
+          transition={{ duration: 1.2 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          className="flex bg-[#292929] items-center justify-center shadow-lg p-5 rounded-lg w-[200px]"
+        >
+          <Image src={App5.src} alt="app1" width={100} height={100} />
         </motion.div>
       </div>
       <div className="my-5">
